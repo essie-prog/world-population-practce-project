@@ -1,0 +1,13 @@
+-- This is the first query:
+
+SELECT DISTINCT year from population_years;
+
+-- Add your additional queries below:
+
+SELECT COUNT year FROM population_years;
+SELECT MAX(population) FROM population_years WHERE country = "Gabon";
+SELECT MIN(population) FROM population_years WHERE year = 2005 ORDER BY 10 DESC;
+SELECT COUNT(DSTINCT country) FROM population_years WHERE population > 100,000,000 AND year =2010;
+SELECT COUNT country FROM population_years WHERE country LIKE %"Islands"%;
+SELECT COUNT population FROM populaton_years WHERE year = 2000 AND country = "Indonesia";
+SELECT COUNT population FROM population_years WHERE year = 2010 AND country = "Indonesia";
